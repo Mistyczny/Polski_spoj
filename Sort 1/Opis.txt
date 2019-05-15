@@ -1,0 +1,27 @@
+Dana jest lista punktów na p³aszczy¿nie. Posortuj je wzglêdem odleg³oœci od œrodka uk³adu wspó³rzêdnych w metryce euklidesowej.
+
+Wejœcie
+W pierwszej linii liczba testów t (t < 100). Dla ka¿dego testu najpierw n (1 ? n ? 1000) - liczba punktów i w kolejnych n liniach opis ka¿dego punktu w formacie: 
+nazwa x y
+gdzie nazwa jest unikalnym dla ka¿dego testu ci¹giem co najwy¿ej 10 liter alfabetu ³aciñskiego, a x i y s¹ wspó³rzêdnymi punktu. Obie wspó³rzêdne s¹ ca³kowite oraz -1000 ? x, y ? 1000. Kolejne testy oddzielone s¹ jednym pustym wierszem. ¯adne 2 punkty nie le¿¹ w tej samej odleg³oœci od œrodka uk³adu wspó³rzêdnych.
+
+Wyjœcie
+Dla ka¿dego przypadku testowego w kolejnych n liniach posortowane punkty. Po ka¿dym przypadku testowym jedna linia odstêpu.
+
+Przyk³ad
+Wejœcie:
+2
+3
+A 0 0
+C 5 5
+B 1 -1
+
+1 
+X 1 1
+
+Wyjœcie:
+A 0 0
+B 1 -1
+C 5 5
+
+X 1 1

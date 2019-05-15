@@ -1,0 +1,36 @@
+Opis
+Pewien bardzo znany poszukiwacz skarbów, pan Skardfinder, w³aœnie odkry³ kolejn¹ w swoim ¿yciu tajemnicz¹ mapê okreœlaj¹c¹ po³o¿enie skarbu. Mapa jest bardzo specyficzna, zawiera jedynie szereg liczb, po dwie w wierszu, których jest bardzo du¿o. Po wielu miesi¹cach uwa¿nego studiowania mapy i okolicznoœci jej zdobycia, pan Skardfinder wreszcie odkry³, co liczby te oznaczaj¹. Otó¿ ka¿da para jest pojedyncz¹ wskazówk¹, gdzie pierwsza liczba w wierszu oznacza kierunek, w którym nale¿y iœæ, a druga iloœæ kroków, które trzeba wykonaæ w tym kierunku. Kierunki te s¹ zakodowane nastêpuj¹co:
+
+        0 - pó³noc
+        1 - po³udnie
+        2 - zachód
+        3 - wschód
+      
+Kolejnym odkryciem by³o to, ¿e liczenie kroków trzeba rozpocz¹æ od pewnej studni. Teraz nie pozosta³o nic innego, jak tylko pojechaæ tam i zacz¹æ chodziæ, jak mapa wskazuje, a potem odkopaæ skarb. Ale... tych wskazówek mo¿e byæ nawet 100000, a kroków w ka¿dej z nich nawet do 10000. Nikt rozs¹dny oczywiœcie nie bêdzie chodzi³ tyle pieszo, a na pewno nie tak znany poszukiwacz skarbów, jak pan Skardfinder. Da³ Ci wiêc zadanie napisania dla niego programu, który wska¿e, jak osi¹gn¹æ skarb robi¹c jak najmniej kroków (oczywiœcie poruszaj¹c siê tylko zgodnie z etykiet¹ poszukiwaczy skarbów tzn. tylko w kierunkach pó³noc-po³udnie, lub wschód-zachód), lub powie, ¿e skarb znajduje siê we wspomnianej studni (jeœli kroki zaprowadz¹ nas do punktu, z którego zaczynaliœmy liczyæ). Teren, na którym szukamy skarbu jest pustym polem i w zasiêgu mapy nie ma na nim ¿adnych przeszkód, które uniemo¿liwia³yby robienie kroków w którymkolwiek z kierunków.
+
+Specyfikacja wejœcia
+Pierwsza linia wejœcia zawiera liczbê ca³kowit¹ D (1 ? D ? 50), oznaczaj¹c¹ liczbê zestawów danych. Pierwsza linia ka¿dego zestawu zawiera jedn¹ liczbê ca³kowit¹ N (0 ? N ? 100000), oznaczaj¹c¹ liczbê wskazówek - par okreœlaj¹cych kierunek i iloœæ kroków do wykonania. Kolejnych N linii sk³ada siê z liczb a i b (0 ? a ? 3; 1 ? b ? 10000), które oznaczaj¹ pojedyncz¹ wskazówkê.
+
+Specyfikacja wyjœcia
+Dla ka¿dego zestawu danych nale¿y wypisaæ najkrótsz¹ drogê zgodn¹ z zasadami etykiety poszukiwaczy skarbów, lub s³owo studnia, jeœli skarb znajduje siê w studni. Drogê oznaczamy tak samo jak na mapie, przez pary kierunek i iloœæ kroków w tym kierunku wypisanych w jednej linii. Jeœli do skarbu prowadzi prosta droga, nale¿y wypisaæ tylko jedn¹ liniê z kierunkiem i iloœci¹ kroków. Jeœli droga musi skrêcaæ, to wtedy pan Skardfinder po przeprowadzeniu na miejscu wizji lokalnej prosi³, aby najpierw kroki wykonywaæ w orientacji pó³noc-po³udnie, a dopiero gdy znajdziemy siê na odpowiedniej wysokoœci w tej orientacji, zacz¹æ robiæ kroki w orientacji wschód-zachód.
+
+Przyk³ad
+Wejœcie
+3
+3
+1 1
+0 2
+3 1
+4
+0 1
+2 1
+1 1
+3 1
+2
+0 1
+0 2
+Wyjœcie
+0 1
+3 1
+studnia
+0 3

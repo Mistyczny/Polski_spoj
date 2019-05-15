@@ -1,0 +1,27 @@
+Napisz funkcjê
+
+void printfloat(float);
+
+która dla zadanej liczby typu float wypisze jej reprezentacjê szesnastkow¹.
+
+Wejœcie
+W pierwszej linii liczba testów t, w kolejnych t wierszach jedna liczba zmiennoprzecinkowa w zakresie typu float.
+
+Wyjœcie
+W kolejnych t wierszach odzielone pojedynczymi spacjami bajty reprezenacji kolejnych liczb, w kolejnoœci od najstarszego bajtu.
+
+Przyk³ad
+Wejœcie:
+5
+1 
+-1 
+0 
+123.125 
+-345
+
+Wyjœcie:
+3f 80 0 0 
+bf 80 0 0 
+0 0 0 0 
+42 f6 40 0 
+c3 ac 80 0 
