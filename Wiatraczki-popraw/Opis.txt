@@ -1,0 +1,64 @@
+Wiatraczek (lewo- lub prawoskrêtny) rzêdu n >= 1 jest macierz¹ znaków o rozmiarze 2n x 2n. Ka¿dy element wiatraczka jest albo kropk¹ ('.'), albo gwiazdk¹ ('*'). Wiatraczki definiujemy rekurencyjnie:
+
+Wszystkie (cztery) elementy wiatraczka rzêdu 1 s¹ gwiazdkami, niezale¿nie od jego skrêtnoœci:
+**
+**
+Dla n ? 1, wiatraczek rzêdu n + 1 konstruujemy nastêpuj¹co (przyk³ady ilustruj¹ kolejne kroki konstruowania lewo- i prawoskrêtnego wiatraczka o rozmiarze 2, '?' - znak do ustalenia):
+
+W macierz wklejamy wycentrowany w pionie i w poziomie wiatraczek rzêdu n o tej samej skrêtnoœci:
+????    ????
+?**?    ?**?
+?**?    ?**?
+????    ????
+We wszystkie naro¿niki nowego wiatraczka wstawiamy gwiazdki:
+*??*    *??*
+?**?    ?**?
+?**?    ?**?
+*??*    *??*
+Odwiedzamy kolejno wszystkie nie ustalone jeszcze znaki (jest ich dok³adnie 8n), startuj¹c z dowolnego naro¿nika i poruszaj¹c siê wzd³u¿ brzegu macierzy. Jeœli konstruujemy wiatraczek prawoskrêtny, poruszamy siê zgodnie z ruchem wskazówek zegara; jeœli lewoskrêtny - przeciwnie. Wzd³u¿ ka¿dej mijanej krawêdzi stawiamy n kolejnych gwiazdek, a nastêpnie n kolejnych kropek:
+*.**    **.*
+***.    .***
+.***    ***.
+**.*    *.**
+Twój program powinien wcztywaæ kolejne liczby ca³kowite. Dla ka¿dej wczytanej liczby r:
+
+jeœli r > 0, generujemy wiatraczek lewoskrêtny rzêdu r, a nastêpnie pusty wiersz,
+jeœli r < 0, generujemy wiatraczek prawoskrêtny rzêdu -r, a nastêpnie pusty wiersz,
+r = 0 oznacza koniec wejœcia, program powinien siê zakoñczyæ (wczytanego zera nie przetwarzamy).
+Wejœcie
+r1 [ -200 ? r1 ? 200, r1 <> 0; pierwsza liczba do przetworzenia ]
+...
+ri [ jw.; i-ta liczba do przetworzenia ]
+0
+
+[ mo¿na za³o¿yæ, ¿e przynajmniej pierwsza wartoœæ bêdzie niezerowa, tj. ¿e i ? 1 ]
+
+Wyjœcie
+[ wiatraczek wygenerowany dla r1 - dok³adnie 2|r1| wierszy tekstu, w ka¿dym wierszu dok³adnie 2|r1| znaków (nie licz¹c '\n') ]
+[ pusty wiersz ]
+...
+[ wiatraczek wygenerowany dla ri ]
+[ pusty wiersz ]
+
+Przyk³ad
+Wejœcie:
+3
+-4
+0
+
+Wyjœcie:
+*..***
+**.**.
+****..
+..****
+.**.**
+***..*
+
+****...*
+.***..**
+..**.***
+...*****
+*****...
+***.**..
+**..***.
+*...****

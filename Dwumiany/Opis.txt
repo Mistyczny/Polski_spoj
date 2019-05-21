@@ -1,0 +1,26 @@
+Dla liczb ca³kowitych n i k, 0 <= k <= n <= 1000, wyznacz liczbê ró¿nych k-elementowych podzbiorów zbioru n-elementowego. Liczby n i k bêd¹ dobrane tak, aby wynik nie przekroczy³ 1 000 000 000.
+
+Input
+T [ liczba testów, T <= 10000 ]
+n_1 k_1
+n_2 k_2
+...
+n_T k_T
+
+Output
+wynik_1
+wynik_2
+...
+wynik_T
+
+Przyk³ad
+Input:
+3
+0 0
+7 3
+1000 2
+
+Output:
+1
+35
+499500

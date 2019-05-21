@@ -1,0 +1,18 @@
+Napisz program, który wyznacza liczbê pierwiastków rzeczywistych równania kwadratowego.
+
+Wejœcie
+Na wejœcie programu podana zostanie pewna nieokreœlona, ale niewielka iloœæ zestawów danych. Ka¿dy zestaw sk³adaæ siê bêdzie z 3 liczb rzeczywistych (wspó³czynników A, B i C równania Ax^2 + Bx + C = 0) rozdzielonych spacjami. Poszczególne zestawy zostan¹ rozdzielone znakiem nowej linii. Mo¿na przyj¹æ, ¿e A jest ró¿ne od zera.
+
+Wyjœcie
+Na wyjœciu ma siê pojawiæ ci¹g liczbowy, którego i-ta pozycja jest równa liczbie pierwiastków rzeczywistych i-tego wczytanego z wejœcia równania. Poszczególne liczby nale¿y rozdzieliæ znakami nowej linii.
+
+Przyk³ad
+Wejœcie:
+0.3 0.3 0.4
+0.5 1 0.5
+-0.5 -0.5 0
+
+Wyjœcie:
+0
+1
+2

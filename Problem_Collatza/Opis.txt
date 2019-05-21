@@ -1,0 +1,29 @@
+Dany jest ci¹g xn okreœlony rekurencyjnie:
+x0=s, 
+xn+1=3*xn+1, jeœli xn jest nieparzyste i 
+xn+1=xn/2, jeœli xn jest parzyste
+
+Napisz program, który oblicza pierwsze takie n, dla którego xn=1.
+
+Wejœcie
+ 
+
+W pierwszej linii liczba testów t. W ka¿dym z t kolejnych wierszy jedna liczba ca³kowita s, 1 <= s <= 10000.
+
+Wyjœcie
+W ka¿dej linii jedna liczba - obliczona wartoœæ n.
+
+Przyk³ad
+Wejœcie:
+5
+1 
+2
+8
+3
+567
+Wyjœcie:
+0
+1
+3
+7
+61

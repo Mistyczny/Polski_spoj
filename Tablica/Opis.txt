@@ -1,0 +1,14 @@
+Napisz program, który wczytuje z wejœcia ci¹g liczb i wypisuje go w odwróconej kolejnoœci.
+
+Wejœcie
+Na wejœcie programu podana zostanie pewna nieokreœlona, ale niewielka iloœæ liczb ca³kowitych rozdzielonych spacjami.
+
+Wyjœcie
+Na wyjœciu ma siê pojawiæ ci¹g liczbowy, którego i-ta pozycja jest równa (n+1-i)-tej liczbie wczytanej z wejœcia, gdzie n to iloœæ wczytanych liczb. Poszczególne liczby nale¿y rozdzieliæ spacjami.
+
+Przyk³ad
+Wejœcie:
+1 2 3
+
+Wyjœcie:
+3 2 1
